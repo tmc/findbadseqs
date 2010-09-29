@@ -113,7 +113,7 @@ class ColumnInformation(object):
         pg_seq = self.sequence_according_to_postgres()
         if not pg_seq:
             logging.warn('Bad sequence ownership: %s.%s, suggesting fixing sql' % (self.table, self.column))
-            result.append(self.get_sequence_permission_fixing_sql(self.sequence_currently_used().name))
+            result.append(self.get_sequence_permission_fixing_sql(self.sequence_currently_used()))
 
         return result
 
