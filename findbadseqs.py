@@ -1,5 +1,5 @@
 """
-Script to generate psql input needed to fix sequence ownership for all pk columns
+Script to generate psql input needed to fix sequence issues for a django db
 """
 import os
 import re
